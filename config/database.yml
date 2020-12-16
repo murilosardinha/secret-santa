@@ -80,6 +80,7 @@ test:
 #
 production:
   <<: *default
-  database: secret-santa2_production
-  username: secret-santa2
-  password: <%= ENV['SECRET-SANTA2_DATABASE_PASSWORD'] %>
+  database: d8abgafs172fvt
+  username: iewlxawxitorux
+  password: fdd4a090cc31fbe1bda62d4bee786cb23737f450c82fcf474be05c605eb26bc1
+  database_url: postgres://iewlxawxitorux:fdd4a090cc31fbe1bda62d4bee786cb23737f450c82fcf474be05c605eb26bc1@ec2-54-160-73-231.compute-1.amazonaws.com:5432/d8abgafs172fvt
