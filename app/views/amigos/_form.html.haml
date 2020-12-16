@@ -1,0 +1,18 @@
+= form_for(@amigo) do |f|
+  - if @amigo.errors.any?
+    #error_explanation
+      %h2
+        = pluralize(@amigo.errors.count, "error")
+        prohibited this amigo from being saved:
+      %ul
+        - @amigo.errors.full_messages.each do |message|
+          %li= message
+  .form-group
+    = f.label 'Nome'
+    %br/
+    = f.text_field :nomeCompleto, class:"form-control"
+  .actions
+    - if @amigo.nomeCompleto
+      = f.submit 'Atualizar', class: 'col btn btn-info btn-lg'
+    - else
+      = f.submit 'Adicionar', class: 'col btn btn-info btn-lg'

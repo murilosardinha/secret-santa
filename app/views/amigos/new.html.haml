@@ -1,0 +1,14 @@
+.text-center.col-lg-12.mt-4
+  %h1.lead.col-xs-12.mb-0 Amigo Secreto
+  %small.col-lg-12 OS FILHOS DE HONÓRIO
+.col-12.mt-4.d-flex.justify-content-center
+  .col-lg-6.d-none.d-lg-block.card
+    = image_tag 'family.jpg', class: 'mt-2 img-fluid img-thumbnail'
+    .card-body
+      %h4.lead O amigo secreto da família acontecerá no dia 24 de Dezembro de 2020, na casa da Dona Maria e do Seu Antônio Honório.
+  .col-lg-6
+    = link_to amigos_path do
+      =icon('fas', 'chevron-left')
+    .list-group.col-lg-6.col-xs-12
+      = render 'form'
+      %br
