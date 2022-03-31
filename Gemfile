@@ -4,7 +4,7 @@ ruby '2.5.1'
 gem 'rails', '~> 5.2.4', '>= 5.2.4.1'
 
 gem "pg", "1.1.4"
-gem "puma", "~> 3.12"
+gem "puma", "~> 4.3"
 
 
 gem 'bootstrap', '~> 4.5.0'
